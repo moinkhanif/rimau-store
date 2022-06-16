@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(to right, #f1c781 0%, #a2443c 100%);
+  padding: 0 50px;
+}
