@@ -7,6 +7,10 @@
   font-family: sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 header,
 .nav-left,
 .logo,
@@ -81,6 +85,12 @@ header .hamburger-container {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-.right-menu a:hover {
+.right-menu a:hover,
+.right-menu a.active{
   border-bottom: 3px solid #fff;
+}
+
+.main-container .section {
+  margin: 25px auto;
+  max-width: 90%;
 }
