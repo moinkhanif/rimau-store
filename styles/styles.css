@@ -6,7 +6,53 @@
   margin: 0;
 }
 
+header,
+.nav-left,
+.logo {
+  display: flex;
+}
+
 header {
   background: linear-gradient(to right, #f1c781 0%, #a2443c 100%);
   padding: 0 50px;
+  justify-content: space-between;
+}
+
+header .logo > img {
+  height: 100%;
+  object-fit: contain;
+}
+
+header .hamburger {
+  position: relative;
+  min-width: 30px;
+  min-height: 20px;
+  width: 30px;
+  height: 20px;
+}
+
+header .hamburger-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.hamburger .line {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #000;
+}
+
+.hamburger .line:nth-child(1) {
+  top: 0;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 50%;
+}
+
+.hamburger .line:nth-child(3) {
+  top: 100%;
 }
