@@ -82,15 +82,63 @@ header .hamburger-container {
   display: inline-block;
   vertical-align: bottom;
   padding: 0 0 5px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .right-menu a:hover,
-.right-menu a.active{
+.right-menu a.active {
   border-bottom: 3px solid #fff;
 }
 
 .main-container .section {
   margin: 25px auto;
   max-width: 90%;
+}
+
+.coming-soon {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .coming-soon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .coming-soon h1 {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    animation: textAnime 10s ease-in-out infinite alternate;
+  }
+
+  @keyframes textAnime {
+    0% {
+      background: linear-gradient(to right, #f1c781 0%, #a2443c 100%);
+      background-size: 50% 50%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+      background: linear-gradient(to right, #f1c781 0%, #a2443c 100%);
+      background-size: 100% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .coming-soon p {
+    padding: 10px 20px;
+    line-height: 1.5;
+  }
 }
