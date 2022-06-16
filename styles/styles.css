@@ -90,9 +90,59 @@ header .hamburger-container {
   border-bottom: 3px solid #fff;
 }
 
+.help-module {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-more {
+  color: #f7951dd5;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.see-more::after {
+  content: '';
+  background-image: url(/assets/imgs/icons8-right-arrow-50.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 53px;
+  height: 35px;
+  background-size: contain;
+  position: absolute;
+  top: -5px;
+  margin-left: 5px;
+}
+
 .main-container .section {
   margin: 25px auto;
   max-width: 90%;
+}
+
+.promo-container {
+  display: flex;
+}
+
+.left-promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  height: 391px;
+  width: 50%;
+}
+
+.right-promo {
+  width: 50%;
+}
+
+.product {
+  background: #F6D085;
+}
+
+.product img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .coming-soon {
