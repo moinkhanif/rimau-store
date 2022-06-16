@@ -4,17 +4,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 header,
 .nav-left,
-.logo {
+.logo,
+.nav-right {
   display: flex;
 }
 
 header {
   background: linear-gradient(to right, #f1c781 0%, #a2443c 100%);
-  padding: 0 50px;
+  padding: 10px 50px;
   justify-content: space-between;
 }
 
@@ -55,4 +57,30 @@ header .hamburger-container {
 
 .hamburger .line:nth-child(3) {
   top: 100%;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
+.right-menu li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.right-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0 0 5px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.right-menu a:hover {
+  border-bottom: 3px solid #fff;
 }
